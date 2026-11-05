@@ -1,0 +1,20 @@
+# Build output. The icon file is generated from assets during the build.
+src/DBA CNC.exe
+src/MakeIcon.exe
+src/app.ico
+*.pdb
+*.obj
+
+# Saved on the PC that runs the machine. Do not commit shop data.
+plate-template.txt
+*.csv
+!assets/sample-product-list.csv
+
+# Editor and Windows clutter
+.vs/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini
+~$*
