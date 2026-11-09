@@ -35,3 +35,26 @@ Version 1.5. The program does not start the spindle. Scribing is a drag operatio
 
 ## Layout
 
+dba-cnc/
+├── .github/            GitHub Actions build, and a bug-report template
+├── assets/             Header logo, app icon artwork, sample product CSV
+├── docs/               Operator guide
+├── src/                The application (one Windows program)
+├── .gitignore
+├── LICENSE
+└── README.md
+
+The application runs entirely from the src folder as a single C# Windows program without a separate server or web frontend.
+
+Requirements
+
+• Windows with .NET Framework 4
+• GRBL 1.1 controller connected via USB serial (CH340) at 115200 baud
+
+Build & Run
+
+Run Build.bat inside the src folder to generate src\DBA CNC.exe. Copy the executable to your shop PC alongside optional configuration files like plate-template.txt and product .csv lists. Daily operation instructions are available in docs/user-guide.md.
+
+License
+
+Copyright 2026 DBA. All rights reserved. See LICENSE.
